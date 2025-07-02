@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #3b82f6);
+  color: #f8fafc;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+   background-color: #0d1117;
+  background-image: radial-gradient(rgba(0, 255, 0, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  height: 50px ;
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  animation: fadeInDown 1s ease;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  font-size: 22px;
+}
+
+.nav-links a {
+  color: #f8fafc;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+  animation: fadeIn 1.5s ease;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #f1f5f9;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #cbd5e1;
+}
+
+.hero a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #80ddff;
+  color: #1e3a8a;
+  font-weight: bold;
+  border-radius: 19px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(85, 143, 173, 0.578);
+  font-size: 18px;
+}
+
+.hero a:hover {
+  background-color: #57a8c1;
+  transform: translateY(-2px);
+}
+
+/* About Section with Glass Card */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem;
+  animation: fadeInUp 1.2s ease;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 3rem;
+  max-width: 800px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 30px rgba(104, 212, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f1f5f9;
+  text-align: center;
+}
+
+.glass-card h2 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  color: #60a5fa;
+}
+
+.glass-card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #e2e8f0;
+}
+
+.skills-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  animation: fadeInUp 1.2s ease;
+}
+
+.skills-section h2 {
+  font-size: 2.3rem;
+  color: #60a5fa;
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: #e2e8f0;
+  font-weight: 600;
+  font-size: 1.1rem;
+  gap: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(73, 154, 189, 0.3);;
+}
+
+.skill-card:hover {
+  transform: translate(-6px);
+  box-shadow: 0 8px 20px rgba(130, 216, 255, 0.3);
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
