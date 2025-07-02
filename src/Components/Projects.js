@@ -52,7 +52,7 @@ function Project() {
     </div>
 
     <a
-  href="/resume.pdf"
+  href="/resume (1).pdf"
   target="_blank"
   rel="noopener noreferrer"
   className="cv-view-button"
