@@ -50,6 +50,16 @@ function Project() {
         <a href="" >Live Demo</a>
       </div>
     </div>
+
+    <a
+  href="/resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="cv-view-button"
+>
+  📄 View My CV
+</a>
+
   </div>
 </section>
 

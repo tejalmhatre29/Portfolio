@@ -62,3 +62,19 @@
 .project-links a:hover {
   color: #38bdf8;
 }
+
+.cv-view-button {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.cv-view-button:hover {
+  background-color: #004999;
+}
