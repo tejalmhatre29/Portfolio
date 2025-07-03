@@ -6,8 +6,6 @@ import { SiPython, SiC } from "react-icons/si";
 import { DiJava } from "react-icons/di";
 import { Link } from "react-router-dom";
 
-
-
 function Dashboard() {
   return (
     <div>
@@ -25,7 +23,7 @@ function Dashboard() {
 
       <section className="hero">
         <h2>Hello, I'm Tejal 👋</h2>
-        <p>A passionate Web Developer building modern React apps.</p>
+        <p>A passionate Web Developer building modern apps.</p>
         <Link to="/projects">View my work</Link>
       
       </section>

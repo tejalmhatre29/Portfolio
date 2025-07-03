@@ -1,6 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import { Link } from 'react-router-dom';
+import { FaFileAlt } from "react-icons/fa";
 
 
 
@@ -57,7 +58,8 @@ function Project() {
   rel="noopener noreferrer"
   className="cv-view-button"
 >
-  📄 View My CV
+  <FaFileAlt size={24} style={{ marginRight: "8px" }} />
+  View CV
 </a>
 
   </div>

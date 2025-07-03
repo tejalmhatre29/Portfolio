@@ -59,7 +59,6 @@ ul {
   color: #38bdf8;
 }
 
-/* Hero Section */
 .hero {
   text-align: center;
   padding: 6rem 2rem 4rem;
@@ -73,9 +72,12 @@ ul {
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 22px;
   margin-bottom: 2rem;
-  color: #cbd5e1;
+  color: #107bff;
+  letter-spacing: 3.9px;
+  font-weight: bold;
+  text-shadow: #ffffff;
 }
 
 .hero a {
