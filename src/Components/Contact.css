@@ -5,13 +5,13 @@
 }
 
 .contact-section h2{
-    font-size: 35px;
+    font-size: 30px;
     letter-spacing: 2.5px;
     color: #ffffff;
 }
 
 .contact-section p{
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1.5px;
     color: #ffffff;
     font-weight: bold;
@@ -31,7 +31,7 @@
   padding: 0.8rem;
   border: none;
   border-radius: 8px;
-  font-size: 20px;
+  font-size: 17px;
   background: #1e293b;
   color: white;
 }
@@ -42,7 +42,7 @@
   color: #0f172a;
   font-weight: bold;
   border: none;
-  font-size: 18x;
+  font-size: 18px;
   padding: 14px 14px;
   border-radius: 8px;
   cursor: pointer;
@@ -55,7 +55,7 @@
 
 .linkedin-link {
   color: #7cd1ff; 
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: none;
   font-weight: bold;
 }
@@ -72,10 +72,86 @@
   color: #7cd1ff;
   font-weight: bold;
   margin-top: 10px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .github-link:hover {
-  text-decoration: underline;
+  text-decoration:underline;
   color: #67cfff;
+}
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .contact-section h2 {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+
+  .contact-section p {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+    margin: 1.5rem auto;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+  }
+
+  .contact-form button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .linkedin-link,
+  .github-link {
+    font-size: 18px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .contact-section h2 {
+    font-size: 22px;
+    letter-spacing: 1.5px;
+  }
+
+  .contact-section p {
+    font-size: 14px;
+    letter-spacing: 0.8px;
+  }
+
+  .contact-form {
+    gap: 0.8rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.7rem;
+    font-size: 15px;
+  }
+
+  .contact-form button {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .linkedin-link,
+  .github-link {
+    font-size: 16px;
+    display: block;
+    margin-top: 12px;
+  }
 }
