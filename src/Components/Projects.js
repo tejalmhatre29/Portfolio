@@ -40,6 +40,19 @@ const projects = [
     ],
     github: "https://github.com/tejalmhatre29",
   },
+
+  {
+  title: "Blinkit Sales Analytics Dashboard",
+  date: "June 2026",
+  tech: ["Power BI", "Power Query", "DAX"],
+  points: [
+    "Developed an interactive sales analytics dashboard using Power BI to analyze Blinkit's sales performance, customer preferences, and outlet operations.",
+    "Performed data cleaning and transformation using Power Query to ensure data quality and consistency.",
+    "Created DAX measures and KPIs for Total Sales, Average Sales, Number of Orders, and Customer Ratings.",
+    "Designed dynamic visualizations including sales trends, outlet performance, item category analysis, and location-based insights.",
+    ],
+  github: "https://github.com/tejalmhatre29"
+}
 ];
 
 function Projects() {
