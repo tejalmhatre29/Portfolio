@@ -34,12 +34,12 @@ const ChatBot = () => {
   if (message.includes('projects')) return "You can find projects in the Projects section!";
   if (message.includes('contact')) return "You can contact Tejal via the Contact page.";
   if (message.includes('skills')) return "Tejal knows React, Node.js, MySQL, and more as mentioned in the dashboard!";
-  if (message.includes('hello,hiiiiiii') || message.includes('hi')) return "Hello! 👋 How can I assist you today?";
+  if (message.includes('hiiiiiii') || message.includes('hi') || message.includes('hello')) return "Hello! 👋 How can I assist you today?";
   if (message.includes('bye') || message.includes('goodbye')) return "Goodbye! 👋 Feel free to chat anytime!";
   if (message.includes('help')) return "Sure! Ask me about projects, skills, contact info, or anything about Tejal.";
-  if (message.includes('location,address,live') || message.includes('based')) return "Tejal is based in India 🇮🇳.";
-  if (message.includes('education,currently') || message.includes('study')) return "Tejal is currently pursuing Computer Engineering 🎓.";
-  if (message.includes('resume') || message.includes('cv')) return "You can find the resume on the Home or About section 📄.";
+  if (message.includes('address') || message.includes('live') ||message.includes('location')|| message.includes('based')) return "Tejal is based in India 🇮🇳.";
+  if (message.includes('education') || message.includes('currently') || message.includes('study')) return "Tejal is currently pursuing Computer Engineering 🎓.";
+  if (message.includes('resume') || message.includes('cv')) return "You can find the resume on the Home or About section .";
   if (message.includes('linkedin')) return "You can visit Tejal’s LinkedIn from the Contact section!";
   if (message.includes('github')) return "Tejal’s GitHub has all the projects! Check it out from the Projects section.";
 

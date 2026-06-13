@@ -3,6 +3,7 @@ import Dashboard from './Components/Dashbaord';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import ChatBot from './Components/ChatBot';
+import Certifications from './Components/Certifications'
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/certifications" element={<Certifications />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
 

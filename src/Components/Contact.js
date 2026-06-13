@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import { Link } from "react-router-dom";
-import { FaLinkedin , FaGithub} from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Contact() {
   return (
@@ -10,18 +10,10 @@ function Contact() {
         <h1 className="logo">Tejal Mhatre</h1>
         <nav>
           <ul className="nav-links">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/">About</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
+            <li><Link to="/">About</Link></li>
+            <li><Link to="/projects">Projects</Link></li>
+            <li><Link to="/certifications">Certifications</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
       </header>
@@ -33,6 +25,7 @@ function Contact() {
           media!
         </p>
 
+        {/* LinkedIn */}
         <a
           href="https://www.linkedin.com/in/tejal-mhatre-b78887329/"
           target="_blank"
@@ -42,21 +35,47 @@ function Contact() {
           <FaLinkedin size={24} style={{ marginRight: "8px" }} />
           Connect on LinkedIn
         </a>
+
+        {/* GitHub */}
         <div>
-        <a
-          href="https://github.com/tejalmhatre29"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="github-link"
-        >
-           <FaGithub size={24} style={{ marginRight: "8px" }} />
-    GitHub
-  </a>
+          <a
+            href="https://github.com/tejalmhatre29"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="github-link"
+          >
+            <FaGithub size={24} style={{ marginRight: "8px" }} />
+            GitHub
+          </a>
         </div>
-        <form className="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea rows="5" placeholder="Your Message" required></textarea>
+
+        {/* CONTACT FORM (LIVE) */}
+        <form
+          className="contact-form"
+          action="https://formspree.io/f/xrebjvzp"
+          method="POST"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+
           <button type="submit">Send</button>
         </form>
       </div>

@@ -91,3 +91,66 @@
   cursor: pointer;
   font-weight: bold;
 }
+
+/* ================================
+   CHATBOT – MOBILE RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+
+  .chatbot-container {
+    bottom: 12px;
+    right: 12px;
+  }
+
+  /* Floating button */
+  .chat-toggle {
+    width: 48px;
+    height: 48px;
+    font-size: 1.4rem;
+  }
+
+  /* Chat window becomes almost full screen */
+  .chat-window {
+    width: 92vw;
+    height: 70vh;
+    max-width: 380px;
+    border-radius: 14px;
+  }
+
+  .chat-header {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  .chat-body {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .chat-message.bot,
+  .chat-message.user {
+    max-width: 85%;
+    font-size: 0.9rem;
+  }
+
+  .chat-footer {
+    padding: 0.5rem;
+  }
+
+  .chat-footer input {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .chat-footer button {
+    padding: 0 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (hover: none) {
+  .chat-toggle:hover {
+    transform: none;
+  }
+}
+
